@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # Instala as dependências de runtime do seu projeto
+      - echo Installing dependencies...
+      - pip install -r requirements.txt
+
+  build:
+    commands:
+      # Executa a síntese do CloudFormation
+      - echo Building the CDK stack...
+      - cdk synth
